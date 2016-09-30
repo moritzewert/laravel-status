@@ -1,0 +1,27 @@
+{
+    "name": "moritzewert/laravel-status",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moritz Ewert",
+            "email": "moritz.ewert@wunderfactory.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.x|5.2.x|5.3.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "Moritzewert\\Status\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8|^5.2"
+    }
+}
