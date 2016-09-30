@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class DatabaseStatus extends Model
 {
-    public $incrementing = false;
-
     protected $table = 'states';
 
     protected $guarded = [];

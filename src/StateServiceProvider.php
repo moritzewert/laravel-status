@@ -9,6 +9,7 @@ use Moritzewert\Status\Dispatcher as DispatcherContract;
 
 class StateServiceProvider extends ServiceProvider
 {
+    public $migrationsPath = '';
     /**
      * Boot the application services.
      *
@@ -16,6 +17,7 @@ class StateServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadMigrationsFrom(__DIR__.$this->migrationsPath);
     }
 
     /**
