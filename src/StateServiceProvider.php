@@ -9,7 +9,7 @@ use Moritzewert\Status\Dispatcher as DispatcherContract;
 
 class StateServiceProvider extends ServiceProvider
 {
-    public $migrationsPath = '';
+    public $migrationsPath = '/../migrations/';
     /**
      * Boot the application services.
      *

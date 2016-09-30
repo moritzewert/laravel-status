@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNotificationsTable extends Migration
+class CreateStatesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -28,6 +28,6 @@ class CreateNotificationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notifications');
+        Schema::dropIfExists('states');
     }
 }
