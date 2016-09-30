@@ -25,4 +25,9 @@ class DatabaseStatus extends Model
     {
         return new DatabaseStatusCollection($models);
     }
+
+    public function isType($type)
+    {
+        return $this->type == $type;
+    }
 }
