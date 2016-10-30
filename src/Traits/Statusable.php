@@ -18,4 +18,10 @@ trait Statusable
     {
         (new StateManager())->addState($this, $instance);
     }
+
+
+    public function latestState()
+    {
+        return $this->states()-orderBy('created_at', 'desc')->first();
+    }
 }
